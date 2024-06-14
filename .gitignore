@@ -1,0 +1,26 @@
+# Environment variables
+.env
+
+# Cookies
+cookies.txt
+
+# Node.js dependencies
+node_modules
+
+# Log files
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Optional output from build scripts
+dist
+build
+
+# Miscellaneous
+.DS_Store
