@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const userRoutes = require('./Routes/userRoutes');
 const profileRoutes = require('./Routes/profileRoutes');
-
+const compareuserRoutes=require('./Routes/compareuserRoutes');
 const app = express();
 
 // Middleware
@@ -21,5 +21,5 @@ mongoose.connect(process.env.MONGODB_URI)
 // Use routes
 app.use('/api', userRoutes);
 app.use('/api', profileRoutes);
-
+app.use('/api', compareuserRoutes);
 app.listen(3000, () => console.log('Server running on port 3000'));
